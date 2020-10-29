@@ -3272,6 +3272,13 @@ ecc-jsbn@~0.1.1:
     jsbn "~0.1.0"
     safer-buffer "^2.1.0"
 
+echarts@^4.9.0:
+  version "4.9.0"
+  resolved "https://registry.npm.taobao.org/echarts/download/echarts-4.9.0.tgz?cache=0&sync_timestamp=1603712757840&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fecharts%2Fdownload%2Fecharts-4.9.0.tgz#a9b9baa03f03a2a731e6340c55befb57a9e1347d"
+  integrity sha1-qbm6oD8Doqcx5jQMVb77V6nhNH0=
+  dependencies:
+    zrender "4.3.2"
+
 ee-first@1.1.1:
   version "1.1.1"
   resolved "https://registry.npm.taobao.org/ee-first/download/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
@@ -5733,6 +5740,11 @@ next-tick@~1.0.0:
   version "1.0.0"
   resolved "https://registry.npm.taobao.org/next-tick/download/next-tick-1.0.0.tgz#ca86d1fe8828169b0120208e3dc8424b9db8342c"
   integrity sha1-yobR/ogoFpsBICCOPchCS524NCw=
+
+ngx-echarts@^5.1.2:
+  version "5.1.2"
+  resolved "https://registry.npm.taobao.org/ngx-echarts/download/ngx-echarts-5.1.2.tgz#ec5d0c7b78389e60eb7aa0ee1f6d784a982966d8"
+  integrity sha1-7F0Me3g4nmDreqDuH214SpgpZtg=
 
 nice-try@^1.0.4:
   version "1.0.5"
@@ -9075,3 +9087,8 @@ zone.js@~0.10.2, zone.js@~0.10.3:
   version "0.10.3"
   resolved "https://registry.npm.taobao.org/zone.js/download/zone.js-0.10.3.tgz?cache=0&sync_timestamp=1602918138045&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fzone.js%2Fdownload%2Fzone.js-0.10.3.tgz#3e5e4da03c607c9dcd92e37dd35687a14a140c16"
   integrity sha1-Pl5NoDxgfJ3NkuN901aHoUoUDBY=
+
+zrender@4.3.2:
+  version "4.3.2"
+  resolved "https://registry.npm.taobao.org/zrender/download/zrender-4.3.2.tgz?cache=0&sync_timestamp=1603693359004&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fzrender%2Fdownload%2Fzrender-4.3.2.tgz#ec7432f9415c82c73584b6b7b8c47e1b016209c6"
+  integrity sha1-7HQy+UFcgsc1hLa3uMR+GwFiCcY=
