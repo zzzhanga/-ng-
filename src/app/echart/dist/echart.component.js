@@ -1,0 +1,182 @@
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+exports.__esModule = true;
+exports.EchartComponent = void 0;
+var core_1 = require("@angular/core");
+var EchartComponent = /** @class */ (function () {
+    function EchartComponent() {
+    }
+    EchartComponent.prototype.ngOnInit = function () {
+        //   this.options = {
+        //     tooltip: {
+        //         trigger: 'axis',
+        //         axisPointer: {            // 坐标轴指示器，坐标轴触发有效
+        //             type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+        //         }
+        //     },
+        //     legend: {
+        //         data: ['直接访问', '邮件营销', '联盟广告', '视频广告', '搜索引擎', '百度', '谷歌', '必应', '其他']
+        //     },
+        //     grid: {
+        //         left: '3%',
+        //         right: '4%',
+        //         bottom: '3%',
+        //         containLabel: true
+        //     },
+        //     xAxis: [
+        //         {
+        //             type: 'category',
+        //             data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日']
+        //         }
+        //     ],
+        //     yAxis: [
+        //         {
+        //             type: 'value'
+        //         }
+        //     ],
+        //     series: [
+        //         {
+        //             name: '直接访问',
+        //             type: 'bar',
+        //             data: [320, 332, 301, 334, 390, 330, 320]
+        //         },
+        //         {
+        //             name: '邮件营销',
+        //             type: 'bar',
+        //             stack: '广告',
+        //             data: [120, 132, 101, 134, 90, 230, 210]
+        //         },
+        //         {
+        //             name: '联盟广告',
+        //             type: 'bar',
+        //             stack: '广告',
+        //             data: [220, 182, 191, 234, 290, 330, 310]
+        //         },
+        //         {
+        //             name: '视频广告',
+        //             type: 'bar',
+        //             stack: '广告',
+        //             data: [150, 232, 201, 154, 190, 330, 410]
+        //         },
+        //         {
+        //             name: '搜索引擎',
+        //             type: 'bar',
+        //             data: [862, 1018, 964, 1026, 1679, 1600, 1570],
+        //             markLine: {
+        //                 lineStyle: {
+        //                     type: 'dashed'
+        //                 },
+        //                 data: [
+        //                     [{type: 'min'}, {type: 'max'}]
+        //                 ]
+        //             }
+        //         },
+        //         {
+        //             name: '百度',
+        //             type: 'bar',
+        //             barWidth: 5,
+        //             stack: '搜索引擎',
+        //             data: [620, 732, 701, 734, 1090, 1130, 1120]
+        //         },
+        //         {
+        //             name: '谷歌',
+        //             type: 'bar',
+        //             stack: '搜索引擎',
+        //             data: [120, 132, 101, 134, 290, 230, 220]
+        //         },
+        //         {
+        //             name: '必应',
+        //             type: 'bar',
+        //             stack: '搜索引擎',
+        //             data: [60, 72, 71, 74, 190, 130, 110]
+        //         },
+        //         {
+        //             name: '其他',
+        //             type: 'bar',
+        //             stack: '搜索引擎',
+        //             data: [62, 82, 91, 84, 109, 110, 120]
+        //         }
+        //     ]
+        // };
+        this.options = {
+            backgroundColor: '#141440',
+            // color: ['#4B8CFE', '#35CF9D', '#FFC06B', '#7EB7FC', '#B580EB', '#6E7FE3'],
+            title: {
+                text: '世界人口总量',
+                subtext: '数据来自网络',
+                show: false //不显示标题
+            },
+            tooltip: {
+                trigger: 'axis',
+                axisPointer: {
+                    type: 'shadow'
+                }
+            },
+            legend: {
+                data: ['2011年', '2012年'],
+                show: false //不显示图例
+            },
+            grid: {
+                left: '3%',
+                right: '4%',
+                bottom: '3%',
+                top: '5%',
+                containLabel: true,
+                show: false //不显示网格
+            },
+            xAxis: {
+                type: 'value',
+                boundaryGap: [0, 0.01],
+                show: false
+            },
+            yAxis: {
+                type: 'category',
+                // show:false,
+                // nameLocation : 'start',
+                data: ['小程序', 'H5', 'PC端', 'IOS手机端', '安卓手机端', 'web端'],
+                axisLine: {
+                    show: false //不显示y轴的轴线
+                },
+                axisTick: {
+                    show: false //不显示y轴刻度
+                }
+            },
+            // y:{
+            //   right:'80%'
+            // },
+            textStyle: {
+                fontSize: 18,
+                color: '#fff'
+            },
+            series: [
+                {
+                    name: '2011年',
+                    type: 'bar',
+                    data: [8, 12, 10, 15, 18, 25],
+                    itemStyle: {
+                        normal: {
+                            color: function (params) {
+                                var colorList = ['#4B8CFE', '#35CF9D', '#FFC06B', '#7EB7FC', '#B580EB', '#6E7FE3'];
+                                return colorList[params.dataIndex];
+                            }
+                        }
+                    }
+                },
+            ]
+        };
+    };
+    EchartComponent = __decorate([
+        core_1.Component({
+            selector: 'app-echart',
+            templateUrl: './echart.component.html',
+            styleUrls: ['./echart.component.css']
+        })
+    ], EchartComponent);
+    return EchartComponent;
+}());
+exports.EchartComponent = EchartComponent;
