@@ -17,6 +17,7 @@ var echart2_component_1 = require("./echart2/echart2.component");
 var echart3_component_1 = require("./echart3/echart3.component");
 var echart4_component_1 = require("./echart4/echart4.component");
 var echart5_component_1 = require("./echart5/echart5.component");
+var echart_page_component_1 = require("./echart-page/echart-page.component");
 var routes = [
     { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
     { path: 'heroes', component: heroes_component_1.HeroesComponent },
@@ -26,7 +27,8 @@ var routes = [
     { path: 'echart2', component: echart2_component_1.Echart2Component },
     { path: 'echart3', component: echart3_component_1.Echart3Component },
     { path: 'echart4', component: echart4_component_1.Echart4Component },
-    { path: 'echart5', component: echart5_component_1.Echart5Component }
+    { path: 'echart5', component: echart5_component_1.Echart5Component },
+    { path: 'echartPage', component: echart_page_component_1.EchartPageComponent }
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {

@@ -8,6 +8,7 @@ import { Echart2Component } from './echart2/echart2.component';
 import { Echart3Component } from './echart3/echart3.component';
 import { Echart4Component } from './echart4/echart4.component';
 import { Echart5Component } from './echart5/echart5.component';
+import {EchartPageComponent} from './echart-page/echart-page.component'
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path: 'heroes', component: HeroesComponent },
@@ -17,7 +18,8 @@ const routes: Routes = [
   { path: 'echart2', component: Echart2Component },
   { path: 'echart3', component: Echart3Component },
   { path: 'echart4', component: Echart4Component },
-  { path: 'echart5', component: Echart5Component }
+  { path: 'echart5', component: Echart5Component },
+  { path: 'echartPage', component: EchartPageComponent }
 ];
 
 @NgModule({

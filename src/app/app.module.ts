@@ -17,7 +17,8 @@ import { EchartComponent } from './echart/echart.component';
 import { Echart2Component } from './echart2/echart2.component';
 import { Echart3Component } from './echart3/echart3.component';
 import { Echart4Component } from './echart4/echart4.component';
-import { Echart5Component } from './echart5/echart5.component'
+import { Echart5Component } from './echart5/echart5.component';
+import { EchartPageComponent } from './echart-page/echart-page.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +31,8 @@ import { Echart5Component } from './echart5/echart5.component'
     Echart2Component,
     Echart3Component,
     Echart4Component,
-    Echart5Component
+    Echart5Component,
+    EchartPageComponent
 
   ],
   imports: [//这里存放所需的外部模块

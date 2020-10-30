@@ -27,7 +27,7 @@ export class Echart3Component implements OnInit {
         {
           name: '场域活跃对象分布',
           type: 'pie',
-          radius: ['50%', '70%'],
+          radius: ['30%', '50%'],
           avoidLabelOverlap: false,
           label: {
             show: true,
@@ -40,8 +40,8 @@ export class Echart3Component implements OnInit {
                 // color: 'rgb(1,1,2)'//不指定颜色
               },
               // smooth: 0.2,//折线弧度
-              length: 20,//折线第一段长度
-              length2: 50,//折线第一段长度
+              length: 6,//折线第一段长度
+              length2: 20,//折线第一段长度
 
             }
           },
