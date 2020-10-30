@@ -6,15 +6,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 exports.__esModule = true;
-exports.Echart2Component = void 0;
+exports.Echart5Component = void 0;
 var core_1 = require("@angular/core");
-var Echart2Component = /** @class */ (function () {
-    function Echart2Component() {
+var Echart5Component = /** @class */ (function () {
+    function Echart5Component() {
     }
-    Echart2Component.prototype.ngOnInit = function () {
+    Echart5Component.prototype.ngOnInit = function () {
         this.options = {
             backgroundColor: '#141440',
-            color: ['#25CEBA', '#4B8CFE', '#B580EB'],
+            color: ['#4B8CFE'],
             textStyle: {
                 fontSize: 18,
                 color: '#fff'
@@ -24,16 +24,17 @@ var Echart2Component = /** @class */ (function () {
                 axisPointer: {
                     type: 'shadow' // 默认为直线，可选为：'line' | 'shadow'
                 },
-                backgroundColor: 'rgb(1,1,2)' //鼠标移入时悬浮框的背景色
+                backgroundColor: 'rgb(1,1,2)',
+                formatter: ' <b>{b}({c})</b><br/>{a1}：{c1}<br/>{a2}：{c2}<br/>{a3}：{c3}<br/>{a4}：{c4}<br/>{a5}：{c5}<br/>{a6}：{c6}<br/>{a7}：{c7}<br/>{a8}：{c8}'
             },
-            legend: {
-                data: ['老师', '学生', '家长'],
-                icon: 'rect',
-                textStyle: {
-                    color: '#fff',
-                    fontSize: '16px'
-                }
-            },
+            // legend: {
+            //     data: ['老师', '学生', '家长'],
+            //     icon: 'rect',
+            //     textStyle:{
+            //       color:'#fff',
+            //       fontSize:'16px'
+            //     }
+            // },
             grid: {
                 left: '3%',
                 right: '4%',
@@ -57,7 +58,7 @@ var Echart2Component = /** @class */ (function () {
             yAxis: [
                 {
                     type: 'value',
-                    name: '人数',
+                    name: '资源数',
                     nameTextStyle: {
                         fontSize: '16px'
                     },
@@ -73,35 +74,56 @@ var Echart2Component = /** @class */ (function () {
             ],
             series: [
                 {
-                    name: '老师',
+                    name: '总数',
                     type: 'bar',
-                    barWidth: '20%',
+                    barWidth: '50%',
                     data: [6553, 3382, 3001, 7334, 2390, 5330, 3320]
                 },
                 {
-                    name: '学生',
+                    name: '试卷',
                     type: 'bar',
-                    barWidth: '20%',
-                    // stack: '广告',//设置堆叠
                     data: [5215, 1532, 1071, 1374, 6790, 3230, 4210]
                 },
                 {
-                    name: '家长',
+                    name: '题库',
                     type: 'bar',
-                    barWidth: '20%',
-                    // stack: '广告',
                     data: [3444, 6182, 5191, 4234, 7290, 2330, 1310]
                 },
+                {
+                    name: '课件',
+                    type: 'bar',
+                    data: [3444, 6182, 5191, 4234, 7290, 2330, 1310]
+                }, {
+                    name: '素材',
+                    type: 'bar',
+                    data: [3444, 6182, 5191, 4234, 7290, 2330, 1310]
+                }, {
+                    name: '教案',
+                    type: 'bar',
+                    data: [3444, 6182, 5191, 4234, 7290, 2330, 1310]
+                }, {
+                    name: '学案',
+                    type: 'bar',
+                    data: [3444, 6182, 5191, 4234, 7290, 2330, 1310]
+                }, {
+                    name: '素材',
+                    type: 'bar',
+                    data: [3444, 6182, 5191, 4234, 7290, 2330, 1310]
+                }, {
+                    name: '其他',
+                    type: 'bar',
+                    data: [3444, 6182, 5191, 4234, 7290, 2330, 1310]
+                }
             ]
         };
     };
-    Echart2Component = __decorate([
+    Echart5Component = __decorate([
         core_1.Component({
-            selector: 'app-echart2',
-            templateUrl: './echart2.component.html',
-            styleUrls: ['./echart2.component.css']
+            selector: 'app-echart5',
+            templateUrl: './echart5.component.html',
+            styleUrls: ['./echart5.component.css']
         })
-    ], Echart2Component);
-    return Echart2Component;
+    ], Echart5Component);
+    return Echart5Component;
 }());
-exports.Echart2Component = Echart2Component;
+exports.Echart5Component = Echart5Component;

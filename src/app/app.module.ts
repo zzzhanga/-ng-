@@ -14,7 +14,10 @@ import { InMemoryDataService }  from './in-memory-data.service';
 import { HeroSearchComponent } from './hero-search/hero-search.component';//用于存放数据的数据库服务
 import {NgxEchartsModule} from 'ngx-echarts';
 import { EchartComponent } from './echart/echart.component';
-import { Echart2Component } from './echart2/echart2.component'
+import { Echart2Component } from './echart2/echart2.component';
+import { Echart3Component } from './echart3/echart3.component';
+import { Echart4Component } from './echart4/echart4.component';
+import { Echart5Component } from './echart5/echart5.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +27,10 @@ import { Echart2Component } from './echart2/echart2.component'
     DashboardComponent,
     HeroSearchComponent,
     EchartComponent,
-    Echart2Component
+    Echart2Component,
+    Echart3Component,
+    Echart4Component,
+    Echart5Component
 
   ],
   imports: [//这里存放所需的外部模块
