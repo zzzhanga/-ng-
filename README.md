@@ -15,4 +15,22 @@ npm i
 npm start
 或者：ng serve --open
 
+特别说明：
+在app.module.ts中导入ngx-echarts依赖之后，在@NgModule中导入 一定要异步！！！
+以下是npm官方文档代码：
+import { NgxEchartsModule } from 'ngx-echarts';
+ 
+@NgModule({
+ imports: [
+   NgxEchartsModule.forRoot({
+     /**
+      * This will import all modules from echarts.
+      * If you only need custom modules,
+      * please refer to [Custom Build] section.
+      */
+     echarts: () => import('echarts'), // or import('./path-to-my-custom-echarts')
+   }),
+ ],
+})
+
 
