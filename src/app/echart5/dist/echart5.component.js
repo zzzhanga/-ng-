@@ -38,7 +38,7 @@ var Echart5Component = /** @class */ (function () {
             grid: {
                 left: '3%',
                 right: '4%',
-                bottom: '3%',
+                bottom: '10%',
                 containLabel: true
             },
             xAxis: [

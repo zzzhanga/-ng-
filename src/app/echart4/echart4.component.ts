@@ -33,7 +33,8 @@ export class Echart4Component implements OnInit {
         // show:true,
         left: '3%',
         right: '4%',
-        bottom: '3%',
+        bottom: '10%',
+        top:'10%',
         containLabel: true,
         // borderColor: '#233A63'
         lineStyle: {

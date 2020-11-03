@@ -1,45 +1,117 @@
-.left{
-    float: left;
+.left {
+  float: left;
 }
-.conent{
+
+.conent {
+  width: 100%;
+  background-color: #0E0D30;
+}
+
+.con1,
+.con2 {
+  overflow: hidden;
+}
+
+.conent .con1-left,
+.conent .con2-left {
+  width: 30%;
+  height: 420px;
+  padding: 10px;
+  box-sizing: border-box;
+  /* border: 1px solid white; */
+}
+
+.conent .con1-center,
+.conent .con2-center {
+  width: 40%;
+  height: 420px;
+  padding: 10px;
+  box-sizing: border-box;
+  /* border: 1px solid white; */
+}
+
+.conent .con1-right,
+.conent .con2-right {
+  width: 30%;
+  height: 420px;
+  padding: 10px;
+  box-sizing: border-box;
+
+}
+
+.bg {
+  background-color: #12123B;
+  color: white;
+  width: 100%;
+  height: 100%;
+  border: 1px solid white;
+}
+
+.demo-chart {
+  width: 100%;
+  height: 100%;
+}
+
+.fengEchart3,
+.fengEchart4,
+.fengEchart5,
+.fengEchart2 {
+  width: 100%;
+  height: 360px;
+  overflow: hidden;
+}
+
+/* .fengEchart2{
     width: 100%;
-    background-color: #0E0D30;
-}
-.con1,.con2{
+    height: 360px;
     overflow: hidden;
+} */
+.echartTop {
+  margin-bottom: 10px;
+  position: relative;
 }
-.conent .con1-left,.conent .con2-left{
-    width: 30%;
-    height: 420px;
-    padding: 10px;
-    box-sizing: border-box;
-    border: 1px solid white;
+
+.echartTop .echartTitle {
+  width: 200px;
+  margin: 0 auto;
+  height: 30px;
+  background-color: #19386F;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 0px 0px 5px 5px;
 }
-.conent .con1-center,.conent .con2-center{
-    width: 40%;
-    height: 420px;
-    padding: 10px;
-    box-sizing: border-box;
-    border: 1px solid white;
+.smallTitle{
+    width: 160px !important;
 }
-.conent .con1-right,.conent .con2-right{
-    width: 30%;
-    height: 420px;
-    padding: 10px;
-    box-sizing: border-box;
-    border: 1px solid white;
+
+.switch {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+   
+  
 }
-.bg{
-   background-color: #12123B;
-   color: white;
-   width: 100%;
-   height: 100%;
+
+.switch a {
+  display: inline-block;
+  font-size: 12px;
+  width: 40px;
+  height: 20px;
+  padding: 0 6px;
+  line-height: 20px;
+ border: 1px solid #4680EB;
 }
-.demo-chart{
-width: 100%;
-height: 100%;
+
+.switch .on {
+  background-color: #4680EB;
+  border-radius: 2px 0 0 2px ;
 }
-.fengEchart3{
-    width: 100%;
-    height: 300px;
+
+.switch .off {
+  background-color: #131741;
+  color: #4680EB;
+  /* border: 1px solid red; */
+  /* height: 18px; */
+  /* box-sizing: border-box; */
+  border-radius: 0 2px 2px 0;
 }

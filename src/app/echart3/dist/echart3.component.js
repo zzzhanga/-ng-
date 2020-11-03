@@ -26,7 +26,7 @@ var Echart3Component = /** @class */ (function () {
                 {
                     name: '场域活跃对象分布',
                     type: 'pie',
-                    radius: ['30%', '50%'],
+                    radius: ['20%', '30%'],
                     avoidLabelOverlap: false,
                     label: {
                         show: true,

@@ -37,7 +37,7 @@ var Echart2Component = /** @class */ (function () {
             grid: {
                 left: '3%',
                 right: '4%',
-                bottom: '3%',
+                bottom: '10%',
                 containLabel: true
             },
             xAxis: [
@@ -58,6 +58,9 @@ var Echart2Component = /** @class */ (function () {
                 {
                     type: 'value',
                     name: '人数',
+                    axisLine: {
+                        show: false //不显示y轴的轴线
+                    },
                     nameTextStyle: {
                         fontSize: '16px'
                     },
@@ -75,20 +78,20 @@ var Echart2Component = /** @class */ (function () {
                 {
                     name: '老师',
                     type: 'bar',
-                    barWidth: '20%',
+                    barWidth: '10%',
                     data: [6553, 3382, 3001, 7334, 2390, 5330, 3320]
                 },
                 {
                     name: '学生',
                     type: 'bar',
-                    barWidth: '20%',
+                    barWidth: '10%',
                     // stack: '广告',//设置堆叠
                     data: [5215, 1532, 1071, 1374, 6790, 3230, 4210]
                 },
                 {
                     name: '家长',
                     type: 'bar',
-                    barWidth: '20%',
+                    barWidth: '10%',
                     // stack: '广告',
                     data: [3444, 6182, 5191, 4234, 7290, 2330, 1310]
                 },
